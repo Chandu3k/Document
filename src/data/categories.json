@@ -1,0 +1,13 @@
+[
+  { "id": "insurance", "name": "Insurance", "type": "document", "color": "#2f5d50" },
+  { "id": "vehicle", "name": "Vehicle", "type": "document", "color": "#b7791f" },
+  { "id": "identity", "name": "Identity", "type": "document", "color": "#4a5a8a" },
+  { "id": "certificate", "name": "Certificates", "type": "document", "color": "#7a4a8a" },
+  { "id": "membership", "name": "Memberships", "type": "document", "color": "#a14b5c" },
+  { "id": "warranty", "name": "Warranties", "type": "document", "color": "#4a7a8a" },
+  { "id": "entertainment", "name": "Entertainment", "type": "subscription", "color": "#b4402f" },
+  { "id": "utilities", "name": "Utilities", "type": "subscription", "color": "#4a7a8a" },
+  { "id": "mobile", "name": "Mobile", "type": "subscription", "color": "#4a5a8a" },
+  { "id": "software", "name": "Software", "type": "subscription", "color": "#7a4a8a" },
+  { "id": "fitness", "name": "Fitness", "type": "subscription", "color": "#2f5d50" }
+]

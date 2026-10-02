@@ -1,0 +1,8 @@
+[
+  { "id": "rem-1", "targetType": "document", "targetId": "doc-3", "date": "2026-10-06", "message": "Book a PUC test before the certificate expires", "done": false },
+  { "id": "rem-2", "targetType": "document", "targetId": "doc-1", "date": "2026-10-10", "message": "Compare quotes and renew car insurance", "done": false },
+  { "id": "rem-3", "targetType": "subscription", "targetId": "sub-5", "date": "2026-10-25", "message": "Decide whether to resume Adobe CC", "done": false },
+  { "id": "rem-4", "targetType": "document", "targetId": "doc-5", "date": "2027-01-10", "message": "Start passport renewal application", "done": false },
+  { "id": "rem-5", "targetType": "subscription", "targetId": "sub-1", "date": "2026-10-01", "message": "Check if the Netflix price changed", "done": true },
+  { "id": "rem-6", "targetType": "general", "targetId": null, "date": "2026-10-15", "message": "Scan and upload new warranty invoices", "done": false }
+]

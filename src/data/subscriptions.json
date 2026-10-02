@@ -1,0 +1,11 @@
+[
+  { "id": "sub-1", "name": "Netflix", "category": "entertainment", "billingCycle": "monthly", "amount": 649, "nextBillingDate": "2026-10-05", "status": "active", "notes": "Standard plan, shared with family.", "startedOn": "2023-02-05" },
+  { "id": "sub-2", "name": "Home Internet", "category": "utilities", "billingCycle": "monthly", "amount": 1179, "nextBillingDate": "2026-10-08", "status": "active", "notes": "300 Mbps fibre plan.", "startedOn": "2024-06-08" },
+  { "id": "sub-3", "name": "Spotify", "category": "entertainment", "billingCycle": "monthly", "amount": 119, "nextBillingDate": "2026-10-12", "status": "active", "notes": "", "startedOn": "2022-09-12" },
+  { "id": "sub-4", "name": "GitHub Copilot", "category": "software", "billingCycle": "monthly", "amount": 830, "nextBillingDate": "2026-10-22", "status": "active", "notes": "Individual plan.", "startedOn": "2025-03-22" },
+  { "id": "sub-5", "name": "Adobe Creative Cloud", "category": "software", "billingCycle": "monthly", "amount": 1675, "nextBillingDate": "2026-10-28", "status": "paused", "notes": "Paused until the next design project.", "startedOn": "2024-01-28" },
+  { "id": "sub-6", "name": "Mobile Plan", "category": "mobile", "billingCycle": "quarterly", "amount": 899, "nextBillingDate": "2026-11-14", "status": "active", "notes": "84-day prepaid pack.", "startedOn": "2023-05-14" },
+  { "id": "sub-7", "name": "Amazon Prime", "category": "entertainment", "billingCycle": "yearly", "amount": 1499, "nextBillingDate": "2026-12-03", "status": "active", "notes": "Includes free delivery and video.", "startedOn": "2021-12-03" },
+  { "id": "sub-8", "name": "Gym Membership", "category": "fitness", "billingCycle": "yearly", "amount": 14999, "nextBillingDate": "2027-01-15", "status": "active", "notes": "Annual plan paid upfront.", "startedOn": "2026-01-15" },
+  { "id": "sub-9", "name": "YouTube Premium", "category": "entertainment", "billingCycle": "monthly", "amount": 149, "nextBillingDate": "2026-09-18", "status": "cancelled", "notes": "Cancelled in September.", "startedOn": "2024-09-18" }
+]

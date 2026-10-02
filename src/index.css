@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+
+  --color-paper: #faf7f2;
+  --color-surface: #ffffff;
+  --color-line: #e8e2d8;
+  --color-ink: #1f1b16;
+  --color-muted: #6f675c;
+
+  --color-accent: #2f5d50;
+  --color-accent-soft: #e3eee9;
+  --color-warn: #b7791f;
+  --color-warn-soft: #fbf0d9;
+  --color-danger: #b4402f;
+  --color-danger-soft: #f8e4e0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* soft page entrance, reused on every screen */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-enter {
+  animation: rise 240ms ease-out;
+}
+
+@keyframes modal-rise {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.modal-enter {
+  animation: modal-rise 200ms ease-out;
+}
+
+/* ---------- Dark theme ---------- */
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-paper: #171512;
+  --color-surface: #211e1a;
+  --color-line: #36312b;
+  --color-ink: #f0ebe3;
+  --color-muted: #a39a8d;
+
+  --color-accent: #7fbfa9;
+  --color-accent-soft: #1f3029;
+  --color-warn: #e0a64a;
+  --color-warn-soft: #3a2e17;
+  --color-danger: #e57b6a;
+  --color-danger-soft: #3b201b;
+}
+
+/* A few hardcoded colours need a dark version too */
+:root[data-theme="dark"] .bg-black\/5,
+:root[data-theme="dark"] .hover\:bg-black\/5:hover {
+  background-color: rgb(255 255 255 / 0.07);
+}
+:root[data-theme="dark"] .bg-black\/10 {
+  background-color: rgb(255 255 255 / 0.12);
+}
+:root[data-theme="dark"] .hover\:bg-black\/\[0\.03\]:hover,
+:root[data-theme="dark"] .hover\:bg-black\/\[0\.02\]:hover {
+  background-color: rgb(255 255 255 / 0.04);
+}
+/* the dimmed backdrop behind modals */
+:root[data-theme="dark"] .bg-ink\/40 {
+  background-color: rgb(0 0 0 / 0.6);
+}
+/* dark text on the light green buttons and selected calendar day */
+:root[data-theme="dark"] .bg-accent {
+  color: #0f1f1a;
+}
+/* the blue used for reminders on the calendar */
+:root[data-theme="dark"] .text-\[\#4a5a8a\] {
+  color: #8fa0d4;
+}
+/* Visible keyboard focus (form fields already show a border change) */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+/* Respect the reduced-motion setting */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
